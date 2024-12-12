@@ -1,0 +1,30 @@
+# Dlib and Face Recognition Setup
+
+This repository contains prebuilt `.whl` files and setup instructions for `dlib` and `face_recognition` on Python 3.13 (Windows 64-bit).
+
+## Prerequisites
+
+- **OS**: Windows 10 or later (64-bit)
+- **Python Version**: 3.13
+- **Virtual Environment (Recommended)**: `venv`
+
+## Installation Steps
+
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/ALAMPROP95/dlib_face_recognition_setup.git
+   cd dlib_face_recognition_setup
+
+
+2. Create and Activate a Virtual Environment:
+
+python -m venv venv
+venv\Scripts\activate
+
+
+3. Install Dependencies: Use the prebuilt .whl files in the wheels/ directory to install dependencies:
+
+pip install --no-index --find-links=./wheels -r requirements.txt
+
+4. Verify Installation
+python -c "import dlib; import face_recognition; print('Setup successful!')"
